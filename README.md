@@ -14,9 +14,9 @@ The PyTorch implementation code of the paper, [Cross-to-merge training with clas
 **Abstract**
 The collection of large-scale datasets inevitably introduces noisy labels, leading to a substantial degradation in the performance of deep neural networks (DNNs). Although sample selection is a mainstream method in the field of learning with noisy labels, which aims to mitigate the impact of noisy labels during model training, the testing performance of these methods exhibits significant fluctuations across different noise rates and types. In this paper, we propose Cross-to-Merge Training (**C2MT** ), a novel framework that is insensitive to the prior information in sample selection progress, enhancing model robustness. In practical implementation, using cross-divided training data, two different networks are cross-trained with the co-teaching strategy for several local rounds, subsequently merged into a unified model by performing federated averages on the parameters of two models periodically. Additionally, we introduce a new class balance strategy, named Median Balance Strategy (MBS), during the cross-dividing process, which evenly divides the training data into a labeled subset and an unlabeled subset based on the estimated loss distribution characteristics. Extensive experimental results on both synthetic and real-world datasets demonstrate the effectiveness of C2MT. The Code will be available at: https://github.com/LanXiaoPang613/C2MT
 
-![PLReMix Framework](./img/framework.png)
+![PLReMix Framework](./img/framework.tif)
 
-[//]: # (<img src="./img/framework.tig" alt="PLReMix Framework" style="margin-left: 10px; margin-right: 50px;"/>)
+[//]: # (<img src="./img/framework.tif" alt="C2MT Framework" style="margin-left: 10px; margin-right: 50px;"/>)
 
 ## Installation
 
