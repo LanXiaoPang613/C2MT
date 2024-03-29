@@ -35,13 +35,11 @@ python train.py --r 0.4 --noise_mode 'asym' --lambda_u 10 --data_path './data/ci
 python train.py --r 0.5 --noise_mode 'sym' --lambda_u 25 --data_path './data/cifar-10-batches-py' --dataset 'cifar10' --num_class 10
 ```
 
-To train on the Animal-10N dataset, run the following command:
+To train on the Animal-10N dataset(https://dm.kaist.ac.kr/datasets/animal-10n/), run the following command:
 
 ```shell
 python train.py --num_epochs 60 --lambda_u 0 --data_path './data/Animal-10N' --dataset 'animal10N' --num_class 10
 ```
-
-Animal-10N(https://dm.kaist.ac.kr/datasets/animal-10n/) dataset (You need to download the dataset from the corresponding website.)
 
 
 ## Citation
