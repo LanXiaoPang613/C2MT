@@ -66,4 +66,4 @@ https://doi.org/10.1016/j.eswa.2024.123846.
 * [DivideMix](https://github.com/LiJunnan1992/DivideMix): The algorithm that our framework is based on.
 * [MOIT](https://github.com/DiegoOrtego/LabelNoiseMOIT): Inspiration for the balancing strategy.
 * [Federated-Learning](https://github.com/AshwinRJ/Federated-Learning-PyTorch): Inspiration for the cross-to-merge training strategy.
-* [Co-teaching]((https://github.com/bhanML/Co-teaching)): Inspiration for the cross-to-merge training strategy.
+* [Co-teaching](https://github.com/bhanML/Co-teaching): Inspiration for the cross-to-merge training strategy.
