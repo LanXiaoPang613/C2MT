@@ -42,7 +42,7 @@ python train.py --num_epochs 60 --lambda_u 0 --data_path './data/Animal-10N' --d
 ```
 
 <details>
-<summary>Animal-10N(https://dm.kaist.ac.kr/datasets/animal-10n/) dataset (You need to download the dataset from the corresponding website.)</summary>
+Animal-10N(https://dm.kaist.ac.kr/datasets/animal-10n/) dataset (You need to download the dataset from the corresponding website.)
 
 
 ## Citation
