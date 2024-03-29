@@ -41,7 +41,6 @@ To train on the Animal-10N dataset, run the following command:
 python train.py --num_epochs 60 --lambda_u 0 --data_path './data/Animal-10N' --dataset 'animal10N' --num_class 10
 ```
 
-<details>
 Animal-10N(https://dm.kaist.ac.kr/datasets/animal-10n/) dataset (You need to download the dataset from the corresponding website.)
 
 
