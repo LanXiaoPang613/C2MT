@@ -5,7 +5,7 @@
 *Qian Zhang, Yi Zhu, Ming Yang, Ge Jin, YingWen Zhu, Qiu Chen*
 
 [[Expert Systems with Applications]](https://doi.org/10.1016/j.eswa.2024.123846)
-[[License: MIT]](https://github.com/LanXiaoPang613/C2MT/blob/main/LICENSE)
+[[License: Apache License 2.0]](https://github.com/LanXiaoPang613/C2MT/blob/main/LICENSE)
 
 </h5>
 
