@@ -26,7 +26,7 @@ parser.add_argument('--T', default=0.5, type=float, help='sharpening temperature
 parser.add_argument('--num_epochs', default=300, type=int)
 parser.add_argument('--id', default='animal10N')
 # parser.add_argument('--data_path', default='E:/Dataset_All/clothing1M/images', type=str, help='path to dataset')
-parser.add_argument('--data_path', default='C:/Users/Administrator/Desktop/DatasetAll/Animal-10N', type=str, help='path to dataset')
+parser.add_argument('--data_path', default='C:/Users/USSTz/Desktop/Animal-10N', type=str, help='path to dataset')
 parser.add_argument('--seed', default=123)
 parser.add_argument('--gpuid', default=0, type=int)
 parser.add_argument('--num_class', default=10, type=int)
@@ -140,7 +140,7 @@ def warmup(net, optimizer, dataloader):
 
         sys.stdout.write('\r')
         sys.stdout.write('|Warm-up: Iter[%3d/%3d]\t CE-loss: %.4f  Conf-Penalty: %.4f'
-                         % (2*(batch_idx + 1), num_batches, loss.item(), penalty.item()))
+                         % (batch_idx + 1, num_batches, loss.item(), penalty.item()))
         sys.stdout.flush()
 
 
@@ -258,7 +258,7 @@ class NegEntropy(object):
 
 
 def create_model():
-    use_cnn = False
+    use_cnn = True
     if use_cnn:
         model = CNN()
         model = model.cuda()
@@ -327,9 +327,9 @@ if resume_epoch > 0:
 
 for epoch in range(resume_epoch, args.num_epochs + 1):
     lr = args.lr
-    if 100 <= epoch < 150:
+    if 50 <= epoch < 100:
         lr /= 10
-    elif epoch >= 150:
+    elif epoch >= 130:
         lr /= 10
     # if 15 <= epoch:
     #     lr /= 2

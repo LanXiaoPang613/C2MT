@@ -70,8 +70,8 @@ class animal_dataset(Dataset):
                 self.train_data = [train_img[i] for i in pred_idx]
                 self.probability = probability[pred_idx]
                 # self.train_labels = train_labels[pred_idx]
-                self.train_labels = train_labels
                 print("%s data has a size of %d" % (self.mode, len(self.train_data)))
+                self.train_labels = train_labels
             elif self.mode == "unlabeled":
                 pred_idx = (1 - pred).nonzero()[0]
                 train_img = path
